@@ -1,0 +1,59 @@
+{
+  "name": "Potenzialanalyse – Formular → E-Mail",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kikonzeptedeutschland",
+        "responseMode": "onReceived",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              { "name": "Access-Control-Allow-Origin", "value": "*" },
+              { "name": "Access-Control-Allow-Headers", "value": "Content-Type" },
+              { "name": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" }
+            ]
+          }
+        }
+      },
+      "id": "webhook-potenzialanalyse",
+      "name": "Webhook – Formular",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [260, 300],
+      "webhookId": "kikonzeptedeutschland"
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "viktor@vt-ai.de",
+        "subject": "=Neue Potenzialanalyse-Anfrage von {{ $json.body.name }}",
+        "emailType": "text",
+        "message": "=Neue Anfrage über das Formular „Kostenlose Potenzialanalyse\":\n\nName:        {{ $json.body.name }}\nUnternehmen: {{ $json.body.company }}\nE-Mail:      {{ $json.body.email }}\nTelefon:     {{ $json.body.phone }}\n\nNachricht:\n{{ $json.body.message }}\n\n— — —\nQuelle:    {{ $json.body.source }}\nSeite:     {{ $json.body.page }}\nGesendet:  {{ $json.body.submittedAt }}",
+        "options": {
+          "replyTo": "={{ $json.body.email }}"
+        }
+      },
+      "id": "send-email",
+      "name": "Gmail an Viktor",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [520, 300],
+      "credentials": {
+        "gmailOAuth2": { "id": "REPLACE_GMAIL_CREDENTIAL_ID", "name": "Gmail account" }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook – Formular": {
+      "main": [
+        [
+          { "node": "Gmail an Viktor", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "active": false
+}
