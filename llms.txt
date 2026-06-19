@@ -1,0 +1,21 @@
+# KI Konzepte Deutschland — Viktor Torno AI Consulting
+
+> KI-Konzepte und KI-Schulungen für den deutschen Mittelstand — DSGVO-konform und EU-AI-Act-ready. Wir zeigen konkret, was sich im Betrieb automatisieren lässt: Voice Agents, Chatbots, Corporate LLM, Workflows und Agenten.
+
+Viktor Torno AI Consulting (Marke „KI Konzepte Deutschland") ist eine Beratung mit Sitz in Dortmund. Schwerpunkte: praxisnahe KI-Konzepte, Prozessautomatisierung und KI-Schulungen für mittelständische Unternehmen — mit Fokus auf Datenschutz (DSGVO) und EU AI Act.
+
+## Wichtige Seiten
+
+- [Startseite — KI-Konzepte, die dein Unternehmen automatisieren](https://kikonzeptedeutschland.de/): 7 Kern-Konzepte (Voice Agents, Chatbots, Corporate LLM, Workflows, Onboarding, Marketing, Agenten) mit Beispielen und messbaren Ergebnissen.
+- [Reifegrad-Analyse digitaler Geschäftsprozesse](https://kikonzeptedeutschland.de/VTAC-Reifegrad-Analyse.html): Kostenloses Self-Assessment zur Einschätzung des KI-Potenzials (Technologie, Daten, Qualität, Organisation).
+
+## Kontakt
+
+- E-Mail: hello@vt-ai.de
+- Telefon: +49 152 244 16727
+- Adresse: Wichburgstraße 14, 44287 Dortmund, Deutschland
+
+## Hinweise
+
+- Themen: KI-Konzepte, Voice Agents, RAG-Chatbots, Corporate LLM, Prozessautomatisierung, KI-Agenten, DSGVO, EU AI Act.
+- Zielgruppe: Geschäftsführer und Teams im deutschen Mittelstand (Angebote richten sich an Gewerbetreibende, §14 BGB).
