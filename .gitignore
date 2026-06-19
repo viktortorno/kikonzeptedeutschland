@@ -1,0 +1,9 @@
+# Interne Arbeitsdokumente – nicht öffentlich veröffentlichen
+uploads/
+
+# Alte Website-Version (durch Root-Dateien ersetzt)
+site/
+
+# Editor-/Backup-Artefakte
+.thumbnail
+*.dc.html
